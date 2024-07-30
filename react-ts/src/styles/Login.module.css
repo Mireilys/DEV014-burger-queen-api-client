@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("https://i.pinimg.com/564x/61/f3/78/61f378ad12de651b8687f30104ea82f9.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilos del contenedor del formulario utilizando Grid */
+.container {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  height: auto;
+  width: 100%;
+  max-width: 400px; /* Ajusta el ancho máximo del contenedor */
+  padding: 20px;
+  margin-top: 320px;
+}
+
+/* Estilos del formulario utilizando Grid */
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Estilos de los elementos de texto */
+h2 {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  margin: 0;
+}
+
+p {
+  font-size: 16px;
+  color: #666;
+  text-align: center;
+  margin: 0;
+}
+
+/* Estilos de las etiquetas */
+label {
+  margin-bottom: 5px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Estilos de los campos de entrada */
+input {
+  padding: 10px;
+  /* border: 1px solid #ccc; */
+  border-radius: 4px;
+  width: 100%;
+}
+
+/* Estilos del botón */
+button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Estilos del botón al pasar el cursor */
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para los mensajes de error */
+.error {
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Media Query Consolidada */
+@media (min-width: 1114px) {
+  .container {
+    padding: 30px; /* Ajusta el padding en pantallas grandes */
+  }
+
+  form {
+    width: 80%;
+    max-width: 100%;
+  }
+
+  h2 {
+    font-size: 28px; /* Tamaño de fuente para h2 en pantallas grandes */
+  }
+
+  p {
+    font-size: 18px; /* Tamaño de fuente para p en pantallas grandes */
+  }
+
+  label {
+    font-size: 16px; /* Tamaño de fuente para etiquetas en pantallas grandes */
+  }
+
+  input,
+  button {
+    padding: 12px; /* Padding para campos de entrada y botones en pantallas grandes */
+  }
+}
